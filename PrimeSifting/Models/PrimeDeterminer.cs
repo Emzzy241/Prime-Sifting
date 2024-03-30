@@ -37,11 +37,5 @@ namespace PrimeSifting.Models
 
         }
 
-
-        public void ClearAll()
-        {
-
-        }
-        
     }    
 }
