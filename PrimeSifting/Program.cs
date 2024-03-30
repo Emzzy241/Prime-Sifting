@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using PrimeSifting.Models;
 
 namespace PrimeSifting.Models
 {
@@ -18,20 +20,34 @@ namespace PrimeSifting.Models
                 Console.WriteLine();
                 string userNumStr = Console.ReadLine();
                 double userNumDouble = double.Parse(userNumStr);
+
+                PrimeDeterminer newDeterminer = new PrimeDeterminer(userNumDouble);
+                List<double> allPrimeNums = newDeterminer.PrimeNumbersDeterminerMethod(userNumDouble);
                 
-                Console.WriteLine("To go again, Enter 1,  to quit or exit enter 0 ");
+                // Using a foreach to loop through the list and display all prime numbers below the number enterred
+                Console.WriteLine();
+                Console.WriteLine($"The Prime Numbers below {userNumDouble} are: ");
+                foreach (double num in allPrimeNums)
+                {
+                    Console.WriteLine(num);
+                }
+
+                Console.WriteLine("To go again, Enter 1,  to quit or exit enter 2 ");
                 string userContinue = Console.ReadLine();
                 int userContinueInt = int.Parse(userContinue);
                  switch (userContinueInt)
                 {
                     case 1:
+                        Console.WriteLine();
                         Main();
                         break;
                     case 2:
+                        Console.WriteLine();
                         Console.WriteLine("Goodbye :(");
                         break;
                     default:
                         Console.WriteLine("Oops! I didn't get that, let's try again");
+                        Console.WriteLine();
                         Main();
                         break;
                 }
@@ -47,4 +63,3 @@ namespace PrimeSifting.Models
 
         }        
     }    
-}
