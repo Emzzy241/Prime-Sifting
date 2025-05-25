@@ -26,7 +26,7 @@ namespace PrimeSifting.Models
                 
                 // Using a foreach to loop through the list and display all prime numbers below the number enterred
                 Console.WriteLine();
-                Console.WriteLine($"The Prime Numbers below {userNumDouble} are: ");
+                Console.WriteLine($"The Prime Numbers before {userNumDouble} are: ");
                 foreach (double num in allPrimeNums)
                 {
                     Console.WriteLine(num);
