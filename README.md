@@ -28,5 +28,5 @@ Licensed under the GNU General Public License
 ## Contact Info
 * _Email: emzzyoluwole@gmail.com_
 * _Instagram @Emmanuel.9944_
-* _Twitter: @Emzzy241 and Profile Name: Dynasty_
+* _Twitter: @EmmanuelMojiboy and Profile Name: Emmanuel Mojiboye_
 * _Github Username: Emzzy241_-
